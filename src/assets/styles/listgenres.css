@@ -1,0 +1,35 @@
+.list-genres {
+    padding: 60px;
+}
+.list-genres-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.list-genres-list li {
+    flex: 1 1 calc(20% - 10px); /* Responsive 4 per row */
+    min-width: 120px;
+}
+
+.list-genres-list li a {
+    display: block;
+    padding: 10px 12px;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 0.3rem;
+    background: #0f2133;
+    color: #aaa;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list-genres-list li a:hover {
+    background-color: #1a3148;
+}
